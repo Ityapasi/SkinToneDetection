@@ -1,4 +1,4 @@
-# 🎨 Real-Time Skin-Tone Region Detection & Color Analyzer
+Real-Time Skin-Tone Region Detection & Color Analyzer
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-5C3EE8?style=flat&logo=opencv&logoColor=white)](https://opencv.org/)
@@ -7,9 +7,9 @@
 
 A real-time Computer Vision system that isolates skin regions using a hybrid dual-color-space pipeline (**HSV + YCrCb**), performs morphological noise cleanup, extracts precise color metrics, and dynamically generates tone classifications with complementary styling swatches.
 
----
 
-## 📌 Features
+
+ Features
 
 - **Dual Color-Space Segmentation:** Combines **HSV** (illumination-decoupled chrominance) and **YCrCb** (chroma-red / chroma-blue isolation) for high-accuracy skin extraction under varied lighting conditions.
 - **Morphological Artifact Removal:** Dual-pass morphological opening (`cv2.MORPH_OPEN`) and closing (`cv2.MORPH_CLOSE`) to eliminate background clutter and fill specular reflections (glasses glare, forehead highlights).
@@ -18,9 +18,9 @@ A real-time Computer Vision system that isolates skin regions using a hybrid dua
 - **Styling Palette Generator:** Automatically computes and recommends 3 complementary accent colors based on detected luminance.
 - **Real-Time Performance:** Includes a live FPS counter processing at 30+ frames per second on standard CPU threads.
 
----
 
-## 🛠️ Pipeline Architecture
+
+Pipeline Architecture
 
 ```text
  Webcam Frame
